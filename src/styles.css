@@ -1,3 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
-
+/* Global styles */
 @import 'tailwindcss';
+
+body {
+  margin: 0;
+  background: #f3f6fb;
+  color: #1a1a1a;
+}
+
+/* Shared "section card" look used by profile, friends, notifications, conferences */
+.section-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 18px;
+  border-left: 5px solid var(--accent, #2f6db5);
+  box-shadow: 0 6px 20px rgba(23, 58, 99, 0.08);
+  padding: 1.5rem 2rem;
+  margin: 0 0 1rem;
+}
+
+.section-card .icon {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+  background: var(--accent-soft, #eaf1fb);
+}
+
+.section-card .body {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-card h2 {
+  margin: 0.2rem 0 1rem;
+  color: #17396b;
+}

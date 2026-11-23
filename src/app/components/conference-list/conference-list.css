@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  --accent: #0f766e;
+  --accent-soft: #e0fbf7;
+}
+
+.hint {
+  margin: -0.6rem 0 1rem;
+  color: #6b7280;
+}
+
+.search {
+  display: block;
+  width: min(100%, 540px);
+  box-sizing: border-box;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #dfe5ee;
+  border-radius: 12px;
+  margin-bottom: 0.2rem;
+}
+
+.empty {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff7e6;
+  color: #92400e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #e0e6ee;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.card h3 {
+  margin: 0 0 1rem;
+  color: #17396b;
+}
+
+.btn {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1.1rem;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font: 700 0.95rem Arial, sans-serif;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn-green {
+  background: #15803d;
+}
+
+.btn-orange {
+  background: #d97706;
+}
+
+.btn-red {
+  background: #c62828;
+}

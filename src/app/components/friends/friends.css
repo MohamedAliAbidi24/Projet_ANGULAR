@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  --accent: #1f9d6b;
+  --accent-soft: #e6f6ef;
+}
+
+.inputs {
+  display: flex;
+}
+
+input {
+  width: 200px;
+  padding: 2px 4px;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 1rem 0 0;
+}

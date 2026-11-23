@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1rem;
+  background: #fff;
+}
+
+a {
+  color: #17396b;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+}
+
+a:hover {
+  background: #eaf1fb;
+}
+
+a.active {
+  background: #2563eb;
+  color: #fff;
+}

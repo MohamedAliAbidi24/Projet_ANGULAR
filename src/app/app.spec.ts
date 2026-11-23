@@ -10,14 +10,23 @@ describe('App', () => {
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the home page sections', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, conference-app');
+    const el = fixture.nativeElement as HTMLElement;
+    for (const tag of [
+      'app-header',
+      'app-navbar',
+      'app-profile',
+      'app-friends',
+      'app-notifications',
+      'app-conference-list',
+      'app-footer',
+    ]) {
+      expect(el.querySelector(tag), tag).toBeTruthy();
+    }
   });
 });

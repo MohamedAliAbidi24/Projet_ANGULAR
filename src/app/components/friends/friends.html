@@ -1,0 +1,19 @@
+<section class="section-card">
+  <div class="icon">👥</div>
+  <div class="body">
+    <h2>Liste des amis</h2>
+
+    <!-- Two-way binding [(ngModel)] : taper dans un champ met à jour les autres -->
+    <div class="inputs">
+      <input type="text" [(ngModel)]="userName" />
+      <input type="text" [(ngModel)]="userName" />
+      <input type="text" [(ngModel)]="userName" />
+    </div>
+
+    <ul>
+      @for (friend of friends; track friend) {
+        <li>{{ friend }}</li>
+      }
+    </ul>
+  </div>
+</section>

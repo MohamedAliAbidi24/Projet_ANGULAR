@@ -1,0 +1,5 @@
+:host {
+  display: block;
+  --accent: #2f6db5;
+  --accent-soft: #eaf1fb;
+}
